@@ -10,9 +10,11 @@ Create the required environment through the following steps:
 git clone https://github.com/lyk761167/SoundDiff-VLN && cd SoundDiff-VLN
 
 conda create -n ss python=3.9 cmake=3.14.0 -y && conda activate janusvln
-Install [habitat-sim v0.1.7](https://github.com/facebookresearch/habitat-sim/tree/v0.1.7)
+Install habitat-sim v0.1.7
 
-Check further instructions from [here](https://github.com/facebookresearch/habitat-sim/blob/v0.1.7/BUILD_FROM_SOURCE.md) — `--headless --with-cuda`
+Check further instructions from here
+ — --headless --with-cuda
+
 
 conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat
 
