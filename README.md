@@ -9,14 +9,15 @@ Create the required environment through the following steps:
 
 1.`git clone https://github.com/lyk761167/SoundDiff-VLN && cd SoundDiff-VLN`
 
-2.conda create -n sounddiff python=3.9 cmake=3.14.0 -y && conda activate sounddiff
+2.Create a virtual env with python=3.9, this will be used throughout:
+`conda create -n sounddiff python=3.9 cmake=3.14.0 -y && conda activate sounddiff`
 
 
-3.Install [habitat-sim v0.1.7](https://github.com/facebookresearch/habitat-sim/tree/v0.1.7)
+3.`Install [habitat-sim v0.1.7](https://github.com/facebookresearch/habitat-sim/tree/v0.1.7)`
 
 Check further instructions from [here](https://github.com/facebookresearch/habitat-sim/blob/v0.1.7/BUILD_FROM_SOURCE.md) — `--headless --with-cuda`
 
-4.Follow instructions on the dataset page to download the rendered audio data and datasets and put them under $ROOT/data/ folder.
+4.Follow instructions on the dataset page to download the rendered audio data and datasets and put them under project/data/ folder.
 
 conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat
 
