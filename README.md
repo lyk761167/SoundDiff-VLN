@@ -25,12 +25,16 @@ git checkout v0.1.7
 pip install -e .
 ```
 ##  Data Preparation
-1. Scene Datasets
+1. Scene Dataset
 
-- For R2R, RxR: Download the MP3D scenes from the [official project page](https://YOUR_LINK_HERE), and place them under `data/scene_datasets/mp3d/`.
-- For ScaleVLN: Download the HM3D scenes from the [official github page](https://YOUR_LINK_HERE), and place the `train` split under `data/scene_datasets/hm3d/`.
+- Download the MP3D scenes from the [official project page](https://YOUR_LINK_HERE), and place them under `data/scene_datasets/mp3d/`.
 
-5.Follow instructions on the dataset page to download the rendered audio data and datasets and put them under project/data/ folder.
+2. R2R-CE Episodes
+   Download the VLN-CE episodes and extract them into the data directory:
+
+- r2r (Rename R2R-CE)
+3. Soundspace dataset
+Follow instructions on the dataset page to download the rendered audio data and datasets and put them under project/data/ folder.
 
 conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat
 
