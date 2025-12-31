@@ -16,7 +16,7 @@ Create the required environment through the following steps:
 3.`Install [habitat-sim v0.1.7](https://github.com/facebookresearch/habitat-sim/tree/v0.1.7)`
 
 Check further instructions from [here](https://github.com/facebookresearch/habitat-sim/blob/v0.1.7/BUILD_FROM_SOURCE.md) — `--headless --with-cuda`
-
+4.
 4.Follow instructions on the dataset page to download the rendered audio data and datasets and put them under project/data/ folder.
 
 conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat
