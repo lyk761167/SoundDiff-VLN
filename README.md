@@ -10,6 +10,7 @@ Create the required environment through the following steps:
 1.`git clone https://github.com/lyk761167/SoundDiff-VLN && cd SoundDiff-VLN`
 
 2.Create a virtual env with python=3.9, this will be used throughout:
+
 `conda create -n sounddiff python=3.9 cmake=3.14.0 -y && conda activate sounddiff`
 
 
@@ -36,6 +37,48 @@ pip install -e .
 3. Soundspace dataset
   
   Follow instructions on the [dataset](https://github.com/facebookresearch/sound-spaces/tree/main/soundspaces)  page to download the rendered audio data and datasets and put them under project/data/ folder.
+
+  
+Your final folder structure should look like this:
+  ```text
+data/
+├── datasets/
+│   ├── r2r/
+│   │   ├── train/
+│   │   ├── val_seen/
+│   │   │   └── val_seen.json.gz
+│   │   └── val_unseen/
+│   │       └── val_unseen.json.gz
+│   ├── rxr/
+│   │   ├── train/
+│   │   ├── val_seen/
+│   │   │   └── val_seen_guide.json.gz
+│   │   └── val_unseen/
+│   │       └── val_unseen_guide.json.gz
+│   └── scalevln/
+│       └── scalevln_subset_150k.json.gz
+├── scene_datasets/
+│   ├── hm3d/
+│   │   ├── 00000-kfPV7w3r5AU5/
+│   │   └── 00001-uVdNNRCyvV1/
+│   └── mp3d/
+│       ├── 17DRP5sb8fy/
+│       └── 1LXtFkjw3qL/
+├── trajectory_data/
+│   ├── R2R-CE-640x480/
+│   │   └── images/
+│   ├── RxR-CE-640x480/
+│   │   └── images/
+│   └── ScaleVLN/
+│       ├── images/
+│       └── annotations.json
+└── dagger_data/
+    ├── R2R/
+    │   ├── images/
+    │   └── annotations.json
+    └── RxR/
+        ├── images/
+        └── annotations.json
 ##  Model
 1.We utilize the Qwen2-Audio-7B model as our audio pre-trained large model, which can be downloaded from [here](https://huggingface.co/Qwen/Qwen2-Audio-7B)
 
