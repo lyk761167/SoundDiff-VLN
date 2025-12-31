@@ -34,6 +34,7 @@ pip install -e .
 
 - [r2r](https://drive.google.com/file/d/1fo8F4NKgZDH-bPSdVU3cONAkt5EW-tyr/view) (Rename R2R-CE)
 3. Soundspace dataset
+  
   Follow instructions on the [dataset](https://github.com/facebookresearch/sound-spaces/tree/main/soundspaces)  page to download the rendered audio data and datasets and put them under project/data/ folder.
 
 conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat
