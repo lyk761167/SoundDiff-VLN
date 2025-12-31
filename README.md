@@ -27,14 +27,14 @@ pip install -e .
 ##  Data Preparation
 1. Scene Dataset
 
-- Download the MP3D scenes from the [official project page](https://YOUR_LINK_HERE), and place them under `data/scene_datasets/mp3d/`.
+- Download the MP3D scenes from the [official project page]([https://niessner.github.io/Matterport/]), and place them under `data/scene_datasets/mp3d/`.
 
 2. R2R-CE Episodes
    Download the VLN-CE episodes and extract them into the data directory:
 
-- r2r (Rename R2R-CE)
+- [r2r] ([https://YOUR_LINK_HERE](https://niessner.github.io/Matterport/))(Rename R2R-CE)
 3. Soundspace dataset
-Follow instructions on the dataset page to download the rendered audio data and datasets and put them under project/data/ folder.
+  Follow instructions on the dataset page to download the rendered audio data and datasets and put them under project/data/ folder.
 
 conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat
 
