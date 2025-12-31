@@ -7,7 +7,7 @@ A Task-Conditioned Diffusion Acoustic Prior Framework for Instruction-Level Audi
 Create the required environment through the following steps:
 
 
-1.git clone https://github.com/lyk761167/SoundDiff-VLN && cd SoundDiff-VLN
+1.`git clone https://github.com/lyk761167/SoundDiff-VLN && cd SoundDiff-VLN`
 
 2.conda create -n sounddiff python=3.9 cmake=3.14.0 -y && conda activate sounddiff
 
