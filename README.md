@@ -2,7 +2,7 @@
 A Task-Conditioned Diffusion Acoustic Prior Framework for Instruction-Level Audio-Visual-Language Navigation
 <a id="top"></a>
 
-## 🛠️ Installation
+## Installation
 
 Create the required environment through the following steps:
 
@@ -24,6 +24,12 @@ cd habitat-lab
 git checkout v0.1.7
 pip install -e .
 ```
+##  Data Preparation
+1. Scene Datasets
+
+- For R2R, RxR: Download the MP3D scenes from the [official project page](https://YOUR_LINK_HERE), and place them under `data/scene_datasets/mp3d/`.
+- For ScaleVLN: Download the HM3D scenes from the [official github page](https://YOUR_LINK_HERE), and place the `train` split under `data/scene_datasets/hm3d/`.
+
 5.Follow instructions on the dataset page to download the rendered audio data and datasets and put them under project/data/ folder.
 
 conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat
