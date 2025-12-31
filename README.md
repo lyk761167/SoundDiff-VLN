@@ -7,7 +7,7 @@ A Task-Conditioned Diffusion Acoustic Prior Framework for Instruction-Level Audi
 Create the required environment through the following steps:
 
 ```bash
-git clone https://github.com/MIV-XJTU/JanusVLN.git && cd JanusVLN
+git clone https://github.com/lyk761167/SoundDiff-VLN && cd JanusVLN
 
 conda create -n janusvln python=3.9 -y && conda activate janusvln
 
