@@ -12,13 +12,15 @@ Create the required environment through the following steps:
 2.Create a virtual env with python=3.9, this will be used throughout:
 
 `conda create -n sounddiff python=3.9 cmake=3.14.0 -y && conda activate sounddiff`
+3.Install Python dependencie
 
+`pip install -r requirements.txt`
 
-3.Install [habitat-sim v0.1.7](https://github.com/facebookresearch/habitat-sim/tree/v0.1.7)
+4.Install [habitat-sim v0.1.7](https://github.com/facebookresearch/habitat-sim/tree/v0.1.7)
 
 Check further instructions from [here](https://github.com/facebookresearch/habitat-sim/blob/v0.1.7/BUILD_FROM_SOURCE.md) — `--headless --with-cuda`
 
-4.Install habitat-lab-dialog (modified version of habitat-lab v0.1.7).
+5.Install habitat-lab-dialog (modified version of habitat-lab v0.1.7).
 ```bash
 git clone https://github.com/facebookresearch/habitat-lab.git
 cd habitat-lab
