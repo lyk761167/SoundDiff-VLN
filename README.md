@@ -7,10 +7,10 @@ A Task-Conditioned Diffusion Acoustic Prior Framework for Instruction-Level Audi
 Create the required environment through the following steps:
 
 ```bash
-git clone https://github.com/lyk761167/SoundDiff-VLN && cd JanusVLN
+git clone https://github.com/lyk761167/SoundDiff-VLN && cd SoundDiff-VLN
 
-conda create -n janusvln python=3.9 -y && conda activate janusvln
-
+conda create -n ss python=3.9 cmake=3.14.0 -y && conda activate janusvln
+Check further instructions from [here](#) `--headless --with-cuda git clone --branch v0.1.7 https://github.com/facebookresearch/habitat-sim.git`
 conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat
 
 git clone --branch v0.2.4 https://github.com/facebookresearch/habitat-lab.git
