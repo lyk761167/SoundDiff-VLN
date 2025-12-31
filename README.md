@@ -36,18 +36,23 @@ pip install -e .
 3. Soundspace dataset
   
   Follow instructions on the [dataset](https://github.com/facebookresearch/sound-spaces/tree/main/soundspaces)  page to download the rendered audio data and datasets and put them under project/data/ folder.
+##  Model
+1.We utilize the Qwen2-Audio-7B model as our audio pre-trained large model, which can be downloaded from [here](https://huggingface.co/Qwen/Qwen2-Audio-7B)
 
-conda install habitat-sim==0.2.4 withbullet headless -c conda-forge -c aihabitat
+2.We have separately provided two sets of JanusVLN model weights to distinguish whether additional data is used or not:
 
-git clone --branch v0.2.4 https://github.com/facebookresearch/habitat-lab.git
-cd habitat-lab
-pip install -e habitat-lab
-pip install -e habitat-baselines
-cd ..
 
-# CUDA 12.4
-pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org
 
-pip install -r requirements.txt
-# Install JanusVLN
-pip install -e .
+##  Training
+###1
+To train on the SoundSpace dataset
+`python   `
+###2
+To train on the R2R-audio dataset
+`python     `
+
+##   Citing
+`bash scripts/evaluation.sh`
+If you find SoundDiff-VLN is useful in your research or applications, please consider giving us a star 🌟 and citing our paper.(The citation information will be available after publication.)
+##   Acknowledgement
+Our work is primarily based on the following codebases:[Qwen2-Audio-7B](https://huggingface.co/Qwen/Qwen2-Audio-7B), [Soundspace](https://github.com/facebookresearch/sound-spaces/tree/main/soundspaces), [AVLEN](https://github.com/merlresearch/avlen/tree/main?tab=readme-ov-file). We are sincerely grateful for their work.
