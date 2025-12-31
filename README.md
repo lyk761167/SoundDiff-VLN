@@ -10,7 +10,7 @@ Create the required environment through the following steps:
 git clone https://github.com/lyk761167/SoundDiff-VLN && cd SoundDiff-VLN
 
 conda create -n ss python=3.9 cmake=3.14.0 -y && conda activate janusvln
-```   ←←←【这里是结束符号，单独一行】
+```   
 
 Install [habitat-sim v0.1.7](https://github.com/facebookresearch/habitat-sim/tree/v0.1.7)
 
