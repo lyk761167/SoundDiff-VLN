@@ -16,6 +16,7 @@ Create the required environment through the following steps:
 3.Install [habitat-sim v0.1.7](https://github.com/facebookresearch/habitat-sim/tree/v0.1.7)
 
 Check further instructions from [here](https://github.com/facebookresearch/habitat-sim/blob/v0.1.7/BUILD_FROM_SOURCE.md) — `--headless --with-cuda`
+
 4.Install habitat-lab-dialog (modified version of habitat-lab v0.1.7).
 ```bash
 git clone https://github.com/facebookresearch/habitat-lab.git
