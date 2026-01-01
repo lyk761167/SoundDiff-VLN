@@ -108,6 +108,15 @@ data/
 
 `python ss_baselines/savi/run1.py --exp-config ss_baselines/savi/config/semantic_audionav/r2r-audio.yaml --model-dir data/models/r2r_audio_sounddiff   `
 
+##  Validation
+1.To evaluate on the SoundSpace dataset
+
+`python ss_baselines/av_nav/run.py --run-type eval --exp-config ss_baselines/savi/config/semantic_audionav/Sounddiff.yaml --model-dir data/models/Sounddiff EVAL_CKPT_PATH_DIR data/models/Sounddiff/ckpt.XXX.pth`
+
+2.To evaluate on the SoundSpace dataset
+
+`python ss_baselines/savi/run1.py --exp-config ss_baselines/savi/config/semantic_audionav/r2r-audio.yaml --model-dir data/models/r2r_audio_sounddiff  EVAL_CKPT_PATH_DIR data/models/r2r_audio_sounddiff/ckpt.XXX.pth  `
+
 ##   Citing
 `bash scripts/evaluation.sh`
 If you find SoundDiff-VLN is useful in your research or applications, please consider giving us a star 🌟 and citing our paper.(The citation information will be available after publication.)
