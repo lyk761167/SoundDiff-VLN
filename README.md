@@ -10,6 +10,7 @@ Create the required environment through the following steps:
 2.Create a virtual env with python=3.9, this will be used throughout:
 
 `conda create -n sounddiff python=3.9 cmake=3.14.0 -y && conda activate sounddiff`
+
 3.Install Python dependencie
 
 `pip install -r requirements.txt`
