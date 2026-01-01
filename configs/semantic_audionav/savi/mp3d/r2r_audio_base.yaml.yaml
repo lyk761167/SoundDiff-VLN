@@ -1,0 +1,120 @@
+# configs/vln/r2r/r2r_audio_base.yaml
+
+
+ENVIRONMENT:
+  MAX_EPISODE_STEPS: 500
+  ITERATOR_OPTIONS:
+    SHUFFLE: True
+    GROUP_BY_SCENE: True
+
+SIMULATOR:
+  TYPE: "HabitatSim-v0"
+  SEED: 100
+
+  HABITAT_SIM_V0:
+    GPU_DEVICE_ID: 0
+
+
+  SCENE_DATASET: "data/scene_datasets/mp3d/mp3d.scene_dataset_config.json"
+  SCENE: "data/scene_datasets/mp3d/{scene}/{scene}.glb"
+
+  AGENT_0:
+    HEIGHT: 1.5
+    RADIUS: 0.1
+    SENSORS: ["RGB_SENSOR", "DEPTH_SENSOR", "GPS_COMPASS_SENSOR", "SPECTROGRAM_SENSOR", "TASK_EMBEDDING_SENSOR"]
+
+  RGB_SENSOR:
+    TYPE: "HabitatSimRGBSensor"
+    HEIGHT: 256
+    WIDTH: 256
+    HFOV: 90
+    POSITION: [0.0, 1.25, 0.0]
+
+  DEPTH_SENSOR:
+    TYPE: "HabitatSimDepthSensor"
+    HEIGHT: 256
+    WIDTH: 256
+    HFOV: 90
+    MIN_DEPTH: 0.5
+    MAX_DEPTH: 5.0
+    POSITION: [0.0, 1.25, 0.0]
+
+  GPS_COMPASS_SENSOR:
+    TYPE: "GPSCompassSensor"
+    POSITION: [0.0, 1.25, 0.0]
+
+  AUDIO:
+    RIR_SAMPLING_RATE: 16000
+    CHANNELS: 2
+    ENABLE_BINAURAL: True
+
+
+TASK:
+
+  TYPE: "Nav-v0"
+
+  GOAL_SENSOR_UUID: "pointgoal_with_gps_compass"
+
+
+  SENSORS:
+    - "POINTGOAL_WITH_GPS_COMPASS_SENSOR"
+    - "INSTRUCTION_SENSOR"
+    - "TASK_EMBEDDING_SENSOR"
+    - "SPECTROGRAM_SENSOR"
+
+  POSSIBLE_ACTIONS: ["STOP", "MOVE_FORWARD", "TURN_LEFT", "TURN_RIGHT"]
+
+  POINTGOAL_WITH_GPS_COMPASS_SENSOR:
+    TYPE: "IntegratedPointGoalGPSAndCompassSensor"
+    GOAL_FORMAT: "POLAR"
+    DIMENSIONALITY: 2
+
+
+  INSTRUCTION_SENSOR:
+  
+    TYPE: "InstructionSensor"
+    MAX_TEXT_LENGTH: 200
+
+
+  TASK_EMBEDDING_SENSOR:
+
+    TYPE: "InstructionEmbeddingSensor"
+    UUID: "task_embedding"  
+    EMBED_DIM: 512
+
+
+  SPECTROGRAM_SENSOR:
+    TYPE: "SpectrogramSensor"
+    UUID: "spectrogram"     
+    SAMPLE_RATE: 16000
+    N_FFT: 512
+    HOP_LENGTH: 160
+    WIN_LENGTH: 400
+    N_MELS: 64
+    POWER: 2.0
+    LOG_SCALE: True
+    CLIP_LENGTH_SEC: 1.0
+
+  MEASUREMENTS: ["DISTANCE_TO_GOAL", "SUCCESS", "SPL"]
+
+  SUCCESS:
+    TYPE: "Success"
+    SUCCESS_DISTANCE: 3.0
+
+  DISTANCE_TO_GOAL:
+    TYPE: "DistanceToGoal"
+
+  SPL:
+    TYPE: "SPL"
+
+
+DATASET:
+ 
+  TYPE: "R2R-Audio-v1"
+
+  SPLIT: "train"
+
+  DATA_PATH: "data/r2r-audio/{split}/{split}.json.gz"
+
+
+  SCENES_DIR: "data/scene_datasets/mp3d"
