@@ -98,7 +98,7 @@ data/
 ##  Model
 1.We utilize the Qwen2-Audio-7B model as our audio pre-trained large model, which can be downloaded from [here](https://huggingface.co/Qwen/Qwen2-Audio-7B)
 
-2.We have separately provided two sets of JanusVLN model weights to distinguish whether additional data is used or not:
+2.We have separately provided model weights for the two datasets and the prior model:
 <table>
   <thead>
     <tr>
@@ -109,17 +109,17 @@ data/
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">JanusVLN</td>
-      <td>R2R-CE, RxR-CE</td>
-      <td><a href="#">JanusVLN_Base</a></td>
+      <td rowspan="3">SoundDiff-VLN</td>
+      <td>Soundspace</td>
+      <td><a href="https://www.modelscope.cn/models/lykhaixing/SoundDiff-VLN/files">SoundDiff-soundspace</a></td>
     </tr>
     <tr>
-      <td>R2R-CE, RxR-CE, DAgger, ScaleVLN</td>
-      <td><a href="#">JanusVLN_Extra</a></td>
+      <td>r2r_audio</td>
+      <td><a href="https://www.modelscope.cn/models/lykhaixing/SoundDiff-VLN/files">SoundDiff-r2r</a></td>
     </tr>
     <tr>
-      <td>R2R-CE, RxR-CE, DAgger, ScaleVLN</td>
-      <td><a href="#">JanusVLN_Extra</a></td>
+      <td>prior</td>
+      <td><a href="https://www.modelscope.cn/models/lykhaixing/SoundDiff-VLN/files">SoundDiff-priora</a></td>
     </tr>
   </tbody>
 </table>
