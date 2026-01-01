@@ -19,11 +19,13 @@ Create the required environment through the following steps:
 Check further instructions from [here](https://github.com/facebookresearch/habitat-sim/blob/v0.1.7/BUILD_FROM_SOURCE.md) — `--headless --with-cuda`
 
 5.Install habitat-lab (modified version of habitat-lab v0.1.7).
+
 ```bash
 git clone https://github.com/facebookresearch/habitat-lab.git
 cd habitat-lab
 git checkout v0.1.7
 pip install -e .
+```
 ##  Data Preparation
 1. Scene Dataset
 
