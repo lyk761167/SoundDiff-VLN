@@ -99,6 +99,26 @@ data/
 1.We utilize the Qwen2-Audio-7B model as our audio pre-trained large model, which can be downloaded from [here](https://huggingface.co/Qwen/Qwen2-Audio-7B)
 
 2.We have separately provided two sets of JanusVLN model weights to distinguish whether additional data is used or not:
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Data</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">JanusVLN</td>
+      <td>R2R-CE, RxR-CE</td>
+      <td><a href="#">JanusVLN_Base</a></td>
+    </tr>
+    <tr>
+      <td>R2R-CE, RxR-CE, DAgger, ScaleVLN</td>
+      <td><a href="#">JanusVLN_Extra</a></td>
+    </tr>
+  </tbody>
+</table>
 
 
 
