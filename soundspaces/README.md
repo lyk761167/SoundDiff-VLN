@@ -28,33 +28,45 @@ python scripts/download_data.py --dataset replica --rir-type binaural_rirs
 
 ## Data Folder Structure
 ```
-    .
-    ├── ...
-    ├── metadata                                  # stores metadata of environments
-    │   └── [dataset]
-    │       └── [scene]
-    │           ├── point.txt                     # coordinates of all points in mesh coordinates
-    │           ├── graph.pkl                     # points are pruned to a connectivity graph
-    ├── binaural_rirs                             # binaural RIRs of 2 channels
-    │   └── [dataset]
-    │       └── [scene]
-    │           └── [angle]                       # azimuth angle of agent's heading in mesh coordinates
-    │               └── [receiver]-[source].wav
-    ├── datasets                                  # stores datasets of episodes of different splits
-    │   └── [dataset]
-    │       └── [version]
-    │           └── [split]
-    │               ├── [split].json.gz
-    │               └── content
-    │                   └── [scene].json.gz
-    ├── sounds                                    # stores all 102 copyright-free sounds
-    │   └── 1s_all
-    │       └── [sound].wav
-    ├── scene_datasets                            # scene_datasets
-    │   └── [dataset]
-    │       └── [scene]
-    │           └── [scene].house (habitat/mesh_sementic.glb)
-    └── scene_observations                        # pre-rendered scene observations
-    │   └── [dataset]
-    │       └── [scene].pkl                       # dictionary is in the format of {(receiver, rotation): sim_obs}
+data/
+├── datasets/
+│   ├── audionav/
+│   └── semantic_audionav/
+├── scene_datasets/
+│   └── mp3d/
+│       ├── 17DRP5sb8fy/
+│       ├── 1LXtFkjw3qL/
+│       └── ..../
+├── scene_observations/
+│   └── mp3d/
+│       ├── 17DRP5sb8fy.pkl/
+│       ├── 1LXtFkjw3qL.pkl/
+│       └── ..../
+├── hf_models/
+│   ├── Qwen2-Audio-7B-audio_tower/
+│   │   ├── model.safetensors/
+│   │   └── config.json/
+│   └── Qwen2-Audio-7B/
+│       ├── tokenizer.json/
+│       ├── model-00001-of-00005.safetensors/
+│       └── ..../
+├── metadata/
+│   └── mp3d/
+├── r2r-audio/
+│   ├── train/
+│   │   ├── train.json/
+│   │   └── ..../
+│   ├── val_seen/
+│   │   ├── val_seen.json/
+│   │   └── ..../
+│   └── val_unseen/
+│       ├── val_unseen.json/
+│       └── ..../
+├── r2r/
+├── binaural_rirs/
+├── pretrained_weights/
+├── sounds/
+└── models
+    ├──output/
+    └── mp3d/
 ```
