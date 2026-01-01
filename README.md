@@ -117,6 +117,10 @@ data/
       <td>R2R-CE, RxR-CE, DAgger, ScaleVLN</td>
       <td><a href="#">JanusVLN_Extra</a></td>
     </tr>
+    <tr>
+      <td>R2R-CE, RxR-CE, DAgger, ScaleVLN</td>
+      <td><a href="#">JanusVLN_Extra</a></td>
+    </tr>
   </tbody>
 </table>
 
