@@ -118,7 +118,6 @@ data/
 `python ss_baselines/savi/run1.py --exp-config ss_baselines/savi/config/semantic_audionav/r2r-audio.yaml --model-dir data/models/r2r_audio_sounddiff  EVAL_CKPT_PATH_DIR data/models/r2r_audio_sounddiff/ckpt.XXX.pth  `
 
 ##   Citing
-`bash scripts/evaluation.sh`
 If you find SoundDiff-VLN is useful in your research or applications, please consider giving us a star 🌟 and citing our paper.(The citation information will be available after publication.)
 ##   Acknowledgement
 Our work is primarily based on the following codebases:[Qwen2-Audio-7B](https://huggingface.co/Qwen/Qwen2-Audio-7B), [Soundspace](https://github.com/facebookresearch/sound-spaces/tree/main/soundspaces), [AVLEN](https://github.com/merlresearch/avlen/tree/main?tab=readme-ov-file). We are sincerely grateful for their work.
