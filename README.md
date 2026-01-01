@@ -87,16 +87,9 @@ data/
 ├── binaural_rirs/
 ├── pretrained_weights/
 ├── sounds/
-├── models
-│   ├──output/
-│   └── mp3d/
-└── dagger_data/
-    ├── R2R/
-    │   ├── images/
-    │   └── annotations.json
-    └── RxR/
-        ├── images/
-        └── annotations.json
+└── models
+    ├──output/
+    └── mp3d/
 ```
 
 ##  Model
