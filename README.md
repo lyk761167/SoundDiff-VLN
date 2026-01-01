@@ -51,35 +51,45 @@ Your final folder structure should look like this:
   ```text
 data/
 ├── datasets/
-│   ├── r2r/
-│   │   ├── train/
-│   │   ├── val_seen/
-│   │   │   └── val_seen.json.gz
-│   │   └── val_unseen/
-│   │       └── val_unseen.json.gz
-│   ├── rxr/
-│   │   ├── train/
-│   │   ├── val_seen/
-│   │   │   └── val_seen_guide.json.gz
-│   │   └── val_unseen/
-│   │       └── val_unseen_guide.json.gz
-│   └── scalevln/
-│       └── scalevln_subset_150k.json.gz
+│   ├── audionav/
+│   └── semantic_audionav/
 ├── scene_datasets/
-│   ├── hm3d/
-│   │   ├── 00000-kfPV7w3r5AU5/
-│   │   └── 00001-uVdNNRCyvV1/
 │   └── mp3d/
 │       ├── 17DRP5sb8fy/
-│       └── 1LXtFkjw3qL/
-├── trajectory_data/
-│   ├── R2R-CE-640x480/
-│   │   └── images/
-│   ├── RxR-CE-640x480/
-│   │   └── images/
-│   └── ScaleVLN/
-│       ├── images/
-│       └── annotations.json
+│       ├── 1LXtFkjw3qL/
+│       └── ..../
+├── scene_observations/
+│   └── mp3d/
+│       ├── 17DRP5sb8fy.pkl/
+│       ├── 1LXtFkjw3qL.pkl/
+│       └── ..../
+├── hf_models/
+│   ├── Qwen2-Audio-7B-audio_tower/
+│   │   ├── model.safetensors/
+│   │   └── config.json/
+│   └── Qwen2-Audio-7B/
+│       ├── tokenizer.json/
+│       ├── model-00001-of-00005.safetensors/
+│       └── ..../
+├── metadata/
+│   └── mp3d/
+├── r2r-audio/
+│   ├── train/
+│   │   ├── train.json/
+│   │   └── ..../
+│   ├── val_seen/
+│   │   ├── val_seen.json/
+│   │   └── ..../
+│   └── val_unseen/
+│       ├── val_unseen.json/
+│       └── ..../
+├── r2r/
+├── binaural_rirs/
+├── pretrained_weights/
+├── sounds/
+├── models
+│   ├──output/
+│   └── mp3d/
 └── dagger_data/
     ├── R2R/
     │   ├── images/
