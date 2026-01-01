@@ -109,7 +109,7 @@ data/
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">JanusVLN</td>
+      <td rowspan="3">JanusVLN</td>
       <td>R2R-CE, RxR-CE</td>
       <td><a href="#">JanusVLN_Base</a></td>
     </tr>
