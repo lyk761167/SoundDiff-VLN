@@ -100,6 +100,7 @@ data/
 1.To train on the SoundSpace dataset(Please first pre-train the diffusion model)
 
 `python ss_baselines/savi/run.py --exp-config ss_baselines/savi/config/semantic_audionav/Sounddiff.yaml --model-dir data/models/Sounddiff `
+
 2.To train on the R2R-audio dataset
 
 `python ss_baselines/savi/run.py --exp-config ss_baselines/savi/config/semantic_audionav/r2r-audio.yaml --model-dir data/models/r2r_audio_sounddiff   `
