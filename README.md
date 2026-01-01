@@ -103,7 +103,7 @@ data/
 
 2.To train on the R2R-audio dataset
 
-`python ss_baselines/savi/run.py --exp-config ss_baselines/savi/config/semantic_audionav/r2r-audio.yaml --model-dir data/models/r2r_audio_sounddiff   `
+`python ss_baselines/savi/run1.py --exp-config ss_baselines/savi/config/semantic_audionav/r2r-audio.yaml --model-dir data/models/r2r_audio_sounddiff   `
 
 ##   Citing
 `bash scripts/evaluation.sh`
