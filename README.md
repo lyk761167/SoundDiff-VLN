@@ -89,7 +89,7 @@ data/
 ├── sounds/
 └── models
     ├──output/
-└── mp3d/
+    └── mp3d/
 ```
 ##  Model
 1.We utilize the Qwen2-Audio-7B model as our audio pre-trained large model, which can be downloaded from [here](https://huggingface.co/Qwen/Qwen2-Audio-7B)
