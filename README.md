@@ -36,6 +36,12 @@ pip install -e .
    Download the VLN-CE episodes and extract them into the data directory:
 
 - [r2r](https://drive.google.com/file/d/1fo8F4NKgZDH-bPSdVU3cONAkt5EW-tyr/view) (Rename R2R-CE)
+  [Here](https://github.com/facebookresearch/sound-spaces/blob/main/SoundSpaces2.md) is the rendering tutorial for Soundspace2.0 on r2r.
+  To enable audio propagation configuration in Habitat-Sim (SoundSpaces 2.0/Audio API), set the following:
+    Source position (world coordinates)
+    Receiver position and orientation (corresponding to the agent's pose)
+  Sampling rate, maximum reflection order/ray tracing parameters, etc.At each step, directly query the rendered binaural waveform or RIR, and then feed it into the model.
+  
 3. Soundspace dataset
   
   Follow instructions on the [dataset](https://github.com/facebookresearch/sound-spaces/tree/main/soundspaces)  page to download the rendered audio data and datasets and put them under project/data/ folder.
