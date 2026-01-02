@@ -152,7 +152,7 @@ data/
     </tr>
     <tr>
       <td>prior</td>
-      <td><a href="https://huggingface.co/lykhaixing/SoundDiff-VLNs">SoundDiff-priora</a></td>
+      <td><a href="https://huggingface.co/lykhaixing/SoundDiff-VLN">SoundDiff-priora</a></td>
     </tr>
   </tbody>
 </table>
