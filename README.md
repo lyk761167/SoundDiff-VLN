@@ -144,15 +144,15 @@ data/
     <tr>
       <td rowspan="3">SoundDiff-VLN</td>
       <td>Soundspace</td>
-      <td><a href="https://www.modelscope.cn/models/lykhaixing/SoundDiff-VLN/files">SoundDiff-soundspace</a></td>
+      <td><a href="https://huggingface.co/lykhaixing/SoundDiff-VLN">SoundDiff-soundspace</a></td>
     </tr>
     <tr>
       <td>r2r_audio</td>
-      <td><a href="https://www.modelscope.cn/models/lykhaixing/SoundDiff-VLN/files">SoundDiff-r2r</a></td>
+      <td><a href="https://huggingface.co/lykhaixing/SoundDiff-VLN">SoundDiff-r2r</a></td>
     </tr>
     <tr>
       <td>prior</td>
-      <td><a href="https://www.modelscope.cn/models/lykhaixing/SoundDiff-VLN/files">SoundDiff-priora</a></td>
+      <td><a href="https://huggingface.co/lykhaixing/SoundDiff-VLNs">SoundDiff-priora</a></td>
     </tr>
   </tbody>
 </table>
