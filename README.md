@@ -15,22 +15,10 @@ A Task-Conditioned Diffusion Acoustic Prior Framework for Instruction-Level Audi
 -  [Evaluation](#Evaluation)
 -  [Citing](#citing)
 
-<a href="#top"
-   style="
-     position: fixed;
-     right: 18px;
-     bottom: 18px;
-     background: #d9534f;
-     color: #fff;
-     padding: 6px 10px;
-     border-radius: 4px;
-     font-size: 12px;
-     text-decoration: none;
-     box-shadow: 0 2px 6px rgba(0,0,0,.2);
-     z-index: 9999;
-   ">
-  back to top
-</a>
+<p align="right">
+  <a href="#top" style="background:#d9534f;color:white;padding:6px 10px;border-radius:4px;text-decoration:none;">back to top</a>
+</p>
+
 
 ## Installation
 Create the required environment through the following steps:
