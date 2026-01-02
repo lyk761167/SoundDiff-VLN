@@ -15,11 +15,12 @@ A Task-Conditioned Diffusion Acoustic Prior Framework for Instruction-Level Audi
 -  [Evaluation](#Evaluation)
 -  [Citing](#citing)
 
-<p align="yellow">
+<p align="right">
   <a href="#top">
     <img src="https://img.shields.io/badge/back%20to%20top-red?style=flat-square" alt="back to top">
   </a>
 </p>
+>
 
 
 
@@ -50,6 +51,12 @@ cd habitat-lab
 git checkout v0.1.7
 pip install -e .
 ```
+<p align="right">
+  <a href="#top">
+    <img src="https://img.shields.io/badge/back%20to%20top-red?style=flat-square" alt="back to top">
+  </a>
+</p>
+
 ##  Data Preparation
 1. Scene Dataset
 
@@ -114,6 +121,13 @@ data/
     ├──output/
     └── mp3d/
 ```
+<p align="right">
+  <a href="#top">
+    <img src="https://img.shields.io/badge/back%20to%20top-red?style=flat-square" alt="back to top">
+  </a>
+</p>
+
+
 ##  Model
 1.We utilize the Qwen2-Audio-7B model as our audio pre-trained large model, which can be downloaded from [here](https://huggingface.co/Qwen/Qwen2-Audio-7B)
 
@@ -143,6 +157,11 @@ data/
   </tbody>
 </table>
 
+<p align="right">
+  <a href="#top">
+    <img src="https://img.shields.io/badge/back%20to%20top-red?style=flat-square" alt="back to top">
+  </a>
+</p>
 
 
 ##  Training
@@ -153,6 +172,12 @@ data/
 2.To train on the R2R-audio dataset
 
 `python ss_baselines/savi/run1.py --exp-config ss_baselines/savi/config/semantic_audionav/r2r-audio.yaml --model-dir data/models/r2r_audio_sounddiff   `
+<p align="right">
+  <a href="#top">
+    <img src="https://img.shields.io/badge/back%20to%20top-red?style=flat-square" alt="back to top">
+  </a>
+</p>
+
 
 ## Evaluation
 1.To evaluate on the SoundSpace dataset
@@ -162,6 +187,13 @@ data/
 2.To evaluate on the SoundSpace dataset
 
 `python ss_baselines/savi/run1.py --exp-config ss_baselines/savi/config/semantic_audionav/r2r-audio.yaml --model-dir data/models/r2r_audio_sounddiff  EVAL_CKPT_PATH_DIR data/models/r2r_audio_sounddiff/ckpt.XXX.pth  `
+
+<p align="right">
+  <a href="#top">
+    <img src="https://img.shields.io/badge/back%20to%20top-red?style=flat-square" alt="back to top">
+  </a>
+</p>
+
 
 ##   Citing
 If you find SoundDiff-VLN is useful in your research or applications, please consider giving us a star 🌟 and citing our paper.(The citation information will be available after publication.)
