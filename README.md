@@ -15,7 +15,7 @@ A Task-Conditioned Diffusion Acoustic Prior Framework for Instruction-Level Audi
 -  [Evaluation](#Evaluation)
 -  [Citing](#citing)
 
-<p align="right">
+<p align="yellow">
   <a href="#top">
     <img src="https://img.shields.io/badge/back%20to%20top-red?style=flat-square" alt="back to top">
   </a>
