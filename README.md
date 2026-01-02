@@ -8,9 +8,9 @@ A Task-Conditioned Diffusion Acoustic Prior Framework for Instruction-Level Audi
 
 -  [Installation](#Installation)
 -  [Data Preparation](#data-preparation)
--  [Model Zoo](#model-zoo)
--  [Training](#training)
--  [Evaluation](#evaluation)
+-  [Model Zoo](#Model)
+-  [Training](#Training)
+-  [Evaluation](#Evaluation)
 -  [Citing](#citing)
 
 [back to top](#top)
@@ -144,7 +144,7 @@ data/
 
 `python ss_baselines/savi/run1.py --exp-config ss_baselines/savi/config/semantic_audionav/r2r-audio.yaml --model-dir data/models/r2r_audio_sounddiff   `
 
-##  Validation
+## Evaluation
 1.To evaluate on the SoundSpace dataset
 
 `python ss_baselines/av_nav/run.py --run-type eval --exp-config ss_baselines/savi/config/semantic_audionav/Sounddiff.yaml --model-dir data/models/Sounddiff EVAL_CKPT_PATH_DIR data/models/Sounddiff/ckpt.XXX.pth`
