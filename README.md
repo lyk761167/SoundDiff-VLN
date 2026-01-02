@@ -4,7 +4,16 @@
 </p>
 A Task-Conditioned Diffusion Acoustic Prior Framework for Instruction-Level Audio-Visual-Language Navigation
 <a id="top"></a>
+## Table of Contents
 
+-  [Installation](#Installation)
+-  [Data Preparation](#data-preparation)
+-  [Model Zoo](#model-zoo)
+-  [Training](#training)
+-  [Evaluation](#evaluation)
+-  [Citing](#citing)
+
+[back to top](#top)
 ## Installation
 Create the required environment through the following steps:
 
